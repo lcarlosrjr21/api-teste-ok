@@ -19,7 +19,7 @@ class HelloController{
 	
 	@GetMapping("/")
 	String hello() {
-		return "Faz um milagre em mim...";
+		return "Bem vindo ao app spring boot...";
 				
 	}
 }
