@@ -17,7 +17,7 @@ import com.treasy.apiv2.model.Node;
 import com.treasy.apiv2.repository.NodeRepository;
 
 @RestController
-@RequestMapping(value="/api")
+@RequestMapping(value="/apiv2")
 public class NodeController {
 	
 	@Autowired
