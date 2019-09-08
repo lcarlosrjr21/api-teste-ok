@@ -19,7 +19,7 @@ class HelloController{
 	
 	@GetMapping("/")
 	String hello() {
-		return "Olá mundo complicado...";
+		return "Faz um milagre em mim...";
 				
 	}
 }
