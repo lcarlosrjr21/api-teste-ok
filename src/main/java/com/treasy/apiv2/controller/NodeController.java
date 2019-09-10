@@ -1,7 +1,7 @@
 package com.treasy.apiv2.controller;
 
 import java.util.List;
-import java.util.Optional;
+//import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -28,9 +28,15 @@ public class NodeController {
 		return nodeRepository.findAll();
 	}
 	
-	@GetMapping("/node/{id}")
+	/*@GetMapping("/node/{id}")
 	public Optional<Node> listaNode(@PathVariable(value="id") long id){
 		return nodeRepository.findById(id);
+	}*/
+	
+	
+	@GetMapping("/node/{parentid}")
+	public List<Node> listaNode(@PathVariable(value="parentid") long parentid){
+		return nodeRepository.findbyparentid(parentid);
 	}
 	
 	@PostMapping("/node")
