@@ -28,9 +28,9 @@ public class NodeController {
 		return nodeRepository.findAll();
 	}
 	
-	@GetMapping("/node/{parentid}")
-	public Optional<Node> listaNode(@PathVariable(value="parentid") long parentid){
-		return nodeRepository.findById(parentid);
+	@GetMapping("/node/{id}")
+	public Optional<Node> listaNode(@PathVariable(value="id") long id){
+		return nodeRepository.findById(id);
 	}
 	
 	@PostMapping("/node")
