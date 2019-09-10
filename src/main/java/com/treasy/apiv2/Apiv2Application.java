@@ -19,7 +19,7 @@ class HelloController{
 	
 	@GetMapping("/")
 	String hello() {
-		return "Bem vindo a API desenvolvida com Spring Boot(JAVA), JPA, Maven e Postgresql - Luiz Carlor Rosa Jr";
+		return "Bem vindo a API desenvolvida com Spring Boot(JAVA), JPA, Maven e Postgresql na Heroku- Luiz Carlor Rosa Jr";
 				
 	}
 }

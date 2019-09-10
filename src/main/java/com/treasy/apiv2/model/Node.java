@@ -8,6 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+// estruturando a tabela com os campos que serão criados na base... junto com os getters e setter
 @Entity
 @Table(name="nodes")
 
